@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "vYk9V28/Hjo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\omsree_harsha\\source\\repos\\Elitea\\Utils\\Utils.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\omsree_harsha\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+    "C:\\Users\\omsree_harsha\\.nuget\\packages\\selenium.webdriver\\4.26.1\\selenium.webdriver.4.26.1.nupkg.sha512",
+    "C:\\Users\\omsree_harsha\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\omsree_harsha\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\omsree_harsha\\.nuget\\packages\\system.text.json\\8.0.4\\system.text.json.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
