@@ -1,23 +1,30 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Utils;
 
 namespace POM
 {
     public class Login
     {
-        private By usernameInput => By.Id("user-name");
+        private readonly IWebDriver _driver;
 
-        private By passwordInput => By.Id("password");
+        public Login(IWebDriver driver)
+        {
+            _driver = driver;
+        }
 
-        private By loginBtn => By.Id("login-button");
+        public void EnterUsername(string username)
+        {
+            _driver.FindElement(By.Id("user-name")).SendKeys(username);
+        }
 
-        private By errorMsg => By.XPath("//div[@class='error-message-container error']");
+        public void EnterPassword(string password)
+        {
+            _driver.FindElement(By.Id("password")).SendKeys(password);
+        }
 
-        public By productTitle => By.XPath("//span[@class='title']");
-
+        public void ClickLoginButton()
+        {
+            _driver.FindElement(By.CssSelector("input.btn_action")).Click();
+        }
     }
 }
