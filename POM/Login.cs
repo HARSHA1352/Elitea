@@ -9,15 +9,20 @@ namespace POM
 {
     public class Login
     {
-        private By usernameInput => By.Id("user-name");
+        public void EnterUsername(string username)
+        {
+            _driver.FindElement(usernameInput).SendKeys(username);
+        }
 
-        private By passwordInput => By.Id("password");
+        public void EnterPassword(string password)
+        {
+            _driver.FindElement(passwordInput).SendKeys(password);
+        }
 
-        private By loginBtn => By.Id("login-button");
-
-        private By errorMsg => By.XPath("//div[@class='error-message-container error']");
-
-        public By productTitle => By.XPath("//span[@class='title']");
+        public void ClickLoginButton()
+        {
+            _driver.FindElement(loginBtn).Click();
+        }
 
     }
 }
